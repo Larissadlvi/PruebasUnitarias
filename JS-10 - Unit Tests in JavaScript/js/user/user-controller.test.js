@@ -16,16 +16,16 @@ test('remove user to userController', () => {
     expect(userController.users).not.toContain(user);
   });
 
-//Parte 2, ejercicio 1 
+
 test('Revisar que un usuario no esté en la lista de usuarios', () => {
   let user = new User(5678, "Germán", "german@gmail.com");
-  let user2 = new User(2345, "Jazmín", "jaazminrm@gmail.com");
+  let user2 = new User(2345, "Larissa", "Larissadelavega@gmail.com");
   userController.add(user);
   expect(userController.users).toContain(user);
   expect(userController.users).not.toContain(user2);
 })
 
-//Parte 2, ejercicio 2
+
 test('remove user to userController', () => {    
   let user = new User(1234,"Santiago", "santiago@generation.org");
   userController.add(user);    
